@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Dabade — Personal Portfolio | IT Student &amp; Aspiring Software Developer</title>
+
+  <meta name="description"
+    content="Personal portfolio of Sahil Dabade, an Information Technology engineering student at NMIET (SPPU) and web developer. Explore projects, technical skills, education, activities, and contact details.">
+  <meta name="keywords"
+    content="Sahil Dabade, Portfolio, Web Developer Enthusiast, Frontend Developer, IT Engineering, NMIET, SPPU, C++, JavaScript, Projects">
+  <meta name="author" content="Sahil Dabade">
+
+  <meta property="og:title" content="Sahil Dabade — Personal Portfolio">
+  <meta property="og:description"
+    content="Information Technology student focused on web development, programming, and building practical projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/sahil-profile.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text x='50' y='65' font-size='48' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>S</text></svg>">
+</head>
+
+<body id="top">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="#home" class="nav-logo" aria-label="Sahil Dabade Home">
+        <span class="logo-code">&lt;</span>Sahil Dabade<span class="logo-code"> /&gt;</span>
+        <span class="logo-dot" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#activities" class="nav-link">Activities</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-moon btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z" />
+          </svg>
+          <svg class="icon-sun btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="section hero-section" id="home">
+
+      <div class="bg-ambient-orb orb-primary" aria-hidden="true"></div>
+      <div class="bg-ambient-orb orb-secondary" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal-on-scroll">
+
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Open to Opportunities &amp; Projects</span>
+          </div>
+
+          <h1 class="hero-name"><span class="hero-greeting">Hi, I'm </span>Sahil Dabade</h1>
+          <p class="hero-headline">Aspiring Software Developer | IT Student | Web Development Enthusiast</p>
+
+          <p class="hero-bio">
+            Information Technology student focused on web development, programming, and building practical projects.
+            Passionate about creating responsive digital experiences and solving real-world challenges.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View Projects</span>
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <span>Contact Me</span>
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            </a>
+
+            <a href="#resume" class="btn btn-outline btn-lg resume-download-trigger">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-meta-bar">
+            <div class="meta-item">
+              <span class="meta-number">B.E. IT</span>
+              <span class="meta-label">NMIET, SPPU Pune</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-number">4+</span>
+              <span class="meta-label">Practical Projects</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-number">C++ &amp; DSA</span>
+              <span class="meta-label">Active Learning Focus</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-number">Web Tech</span>
+              <span class="meta-label">HTML, CSS &amp; JS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper reveal-on-scroll">
+          <div class="hero-avatar-frame hero-avatar-circular">
+            <img src="assets/images/sahil-profile.png"
+              alt="Sahil Dabade - Information Technology student and web developer" class="hero-avatar-img" width="340"
+              height="340" loading="eager">
+
+            <div class="hero-floating-badge badge-top-left">
+              <span>💻</span>
+              <span>Software Developer</span>
+            </div>
+
+            <div class="hero-floating-badge badge-bottom-right">
+              <span>⚙️</span>
+              <span>C++ &amp; Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity &amp; Code</h2>
+          <p class="section-description">
+            A snapshot of my background, academic journey, and what drives my pursuit of software development.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-text reveal-on-scroll">
+            <p>
+              Hello! I'm <strong>Sahil Dabade</strong>, an Information Technology engineering student at <strong>Nutan
+                Maharashtra Institute of Engineering and Technology (NMIET), Talegaon</strong>, affiliated with
+              <strong>Savitribai Phule Pune University (SPPU)</strong>.
+            </p>
+            <p>
+              My primary passion lies in <strong>frontend and web development</strong>, where I enjoy designing
+              responsive, intuitive, and accessible user interfaces. I build practical web projects using semantic
+              HTML5, modern CSS3, and JavaScript, ensuring smooth functionality across all screen sizes.
+            </p>
+            <p>
+              Alongside web engineering, I am actively strengthening my fundamentals in <strong>C++ and Data Structures
+                &amp; Algorithms (DSA)</strong> to develop strong problem-solving skills and write efficient, clean
+              code. I believe consistent practice and practical implementation are the fastest ways to grow as a
+              developer.
+            </p>
+            <p>
+              I am focused on <strong>continuous learning, engineering opportunities, and collaborative software
+                projects</strong> where I can contribute actively, learn from experienced mentors, and prepare
+              thoroughly for software development roles.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">🎯</div>
+                <h3 class="pillar-title">Practical Implementation</h3>
+                <p class="pillar-desc">Belief in building real, usable web applications to solidify theory.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🔄</div>
+                <h3 class="pillar-title">Continuous Improvement</h3>
+                <p class="pillar-desc">Consistent daily coding habits in DSA, problem solving, and modern web tools.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🤝</div>
+                <h3 class="pillar-title">Team Collaboration</h3>
+                <p class="pillar-desc">Experience leading college symposium teams and hackathon initiatives.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">📱</div>
+                <h3 class="pillar-title">Responsive Design</h3>
+                <p class="pillar-desc">Committed to crafting mobile-first layouts with zero compromise on usability.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-facts-card reveal-on-scroll">
+            <h3 class="about-facts-title">
+              <span>📋</span> Personal Profile &amp; Highlights
+            </h3>
+            <div class="fact-list">
+              <div class="fact-item">
+                <span class="fact-label">Full Name</span>
+                <span class="fact-value">Sahil Dabade</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Current Degree</span>
+                <span class="fact-value">B.E. Information Technology</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Institution</span>
+                <span class="fact-value">NMIET, Talegaon</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Affiliation</span>
+                <span class="fact-value">SPPU (Pune University)</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Primary Interests</span>
+                <span class="fact-value">Web Dev, C++, DSA</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Primary Focus</span>
+                <span class="fact-value">Frontend &amp; Software Dev</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Open For</span>
+                <span class="fact-value">Projects &amp; Opportunities</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Pune / Talegaon, India</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem; text-align: center;">
+              <a href="#contact" class="btn btn-primary btn-sm" style="width: 100%;">Let's Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Technical Toolkit</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-description">
+            A transparent overview of the languages, libraries, and developer tools I work with and actively study.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-header">
+              <div class="skill-cat-icon">🎨</div>
+              <h3 class="skill-cat-title">Frontend</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level-badge badge-proficient">Proficient</span>
+                </div>
+                <p class="skill-desc">Semantic document hierarchy, accessibility (a11y), forms &amp; SEO best practices.
+                </p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level-badge badge-proficient">Proficient</span>
+                </div>
+                <p class="skill-desc">Flexbox, CSS Grid, custom properties (variables), media queries, transitions.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level-badge badge-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-desc">ES6+ syntax, DOM manipulation, event handling, async fetch, client validation.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-level-badge badge-proficient">Proficient</span>
+                </div>
+                <p class="skill-desc">Mobile-first layouts, cross-browser compatibility, fluid typography.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-header">
+              <div class="skill-cat-icon">💻</div>
+              <h3 class="skill-cat-title">Programming</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">C++</span>
+                  <span class="skill-level-badge badge-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-desc">Object-Oriented Programming (OOP), STL containers, memory pointers &amp;
+                  algorithms.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Data Structures &amp; DSA</span>
+                  <span class="skill-level-badge badge-learning">Active Learning</span>
+                </div>
+                <p class="skill-desc">Arrays, linked lists, stacks, queues, recursion, sorting &amp; searching problem
+                  solving.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level-badge badge-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-desc">Core Java concepts, classes, inheritance, polymorphism, encapsulation, exception
+                  handling.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-header">
+              <div class="skill-cat-icon">🗄️</div>
+              <h3 class="skill-cat-title">Database</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level-badge badge-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-desc">Relational database design, table relationships, primary &amp; foreign keys.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">SQL Queries</span>
+                  <span class="skill-level-badge badge-intermediate">Intermediate</span>
+                </div>
+                <p class="skill-desc">CRUD operations, complex JOINs, GROUP BY, aggregations, data integrity
+                  constraints.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Database Normalization</span>
+                  <span class="skill-level-badge badge-learning">Academic Study</span>
+                </div>
+                <p class="skill-desc">1NF, 2NF, 3NF schema structuring and entity-relationship modeling.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-header">
+              <div class="skill-cat-icon">🛠️</div>
+              <h3 class="skill-cat-title">Tools &amp; Workflow</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-level-badge badge-proficient">Proficient</span>
+                </div>
+                <p class="skill-desc">Version control, atomic commits, branching, merging, resolving conflicts.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-level-badge badge-proficient">Proficient</span>
+                </div>
+                <p class="skill-desc">Repository management, GitHub Pages deployment, open-source pull requests.</p>
+              </div>
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level-badge badge-proficient">Proficient</span>
+                </div>
+                <p class="skill-desc">Modern IDE configuration, Live Server, debugging tools, linters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+          <p class="section-description">
+            My formal engineering education and foundational schooling milestones.
+          </p>
+        </div>
+
+        <div class="education-timeline">
+
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Bachelor of Engineering (B.E.) — Information Technology</h3>
+                  <p class="timeline-institution">
+                    <span>🏛️</span> Nutan Maharashtra Institute of Engineering and Technology (NMIET), Talegaon
+                  </p>
+                </div>
+                <span class="timeline-tag">Undergraduate · Current</span>
+              </div>
+              <div class="timeline-meta">
+                <span><strong>Affiliation:</strong> Savitribai Phule Pune University (SPPU)</span>
+                <span><strong>Branch:</strong> Information Technology</span>
+              </div>
+              <p class="timeline-body">
+                Pursuing engineering coursework covering Data Structures &amp; Algorithms, Object-Oriented Programming,
+                Database Management Systems, Computer Networks, and Software Engineering. Active participant in
+                technical symposiums and college hackathons.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Higher Secondary Certificate (HSC — 12th Grade)</h3>
+                  <p class="timeline-institution">
+                    <span>📚</span> Maharashtra State Board of Secondary and Higher Secondary Education
+                  </p>
+                </div>
+                <span class="timeline-tag">Completed</span>
+              </div>
+              <div class="timeline-meta">
+                <span><strong>Stream:</strong> Science</span>
+                <span class="timeline-score"><strong>Score:</strong> 73.50%</span>
+              </div>
+              <p class="timeline-body">
+                Comprehensive study of Physics, Chemistry, Mathematics, and Computer Science fundamentals, establishing
+                a solid quantitative and logical foundation for engineering studies.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-degree">Secondary School Certificate (SSC — 10th Grade)</h3>
+                  <p class="timeline-institution">
+                    <span>🏫</span> Maharashtra State Board of Secondary and Higher Secondary Education
+                  </p>
+                </div>
+                <span class="timeline-tag">Completed</span>
+              </div>
+              <div class="timeline-meta">
+                <span><strong>Discipline:</strong> General School Curriculum</span>
+                <span class="timeline-score"><strong>Score:</strong> 94.00%</span>
+              </div>
+              <p class="timeline-body">
+                Demonstrated strong academic dedication with 94.00%, developing fundamental analytical discipline,
+                mathematics proficiency, and foundational scientific inquiry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects Portfolio</h2>
+          <p class="section-description">
+            A showcase of practical web applications, user interfaces, and projects built to demonstrate front-end
+            engineering principles.
+          </p>
+        </div>
+
+        <div class="projects-filter-bar reveal-on-scroll" role="toolbar" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-filter="all">All Projects (4)</button>
+          <button type="button" class="filter-btn" data-filter="web-app">Web Applications (3)</button>
+          <button type="button" class="filter-btn" data-filter="frontend">Frontend &amp; Landing (1)</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal-on-scroll" data-category="web-app">
+
+            <div class="project-media">
+              <img src="assets/images/image.png" alt="AI Assistant Alex web chatbot interface mockup"
+                class="project-img" width="800" height="450" loading="lazy">
+
+              <span class="project-badge-overlay">AI Assistant</span>
+            </div>
+
+            <div class="project-body">
+
+              <h3 class="project-title">AI Assistant — Alex</h3>
+
+              <p class="project-description">
+                An interactive AI assistant and chatbot project designed with a modern chat canvas,
+                prompt recommendations, and voice-frequency visualizers to demonstrate intelligent
+                prompt workflows.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">AI Chat UI</span>
+              </div>
+
+              <div class="project-actions">
+
+                <a href="https://sahildabade.github.io/alex/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-sm" aria-label="View live AI Assistant Alex project">
+                  View Live Project
+                </a>
+
+                <a href="https://github.com/SahilDabade/alex" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm" aria-label="View Alex GitHub source code">
+                  GitHub
+                </a>
+
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-on-scroll" data-category="web-app">
+            <div class="project-media">
+              <img src="assets/images/image2.png" alt="Gaming Store Website user interface mockup" class="project-img"
+                width="800" height="450" loading="lazy">
+              <span class="project-badge-overlay">Store UI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gaming Store Website</h3>
+              <p class="project-description">
+                A dynamic, web-based digital gaming storefront interface featuring cyber-themed game catalog cards,
+                discount promotional banners, rating badges, and interactive shopping cart states.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">E-Commerce UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://gamexorax.netlify.app" class="btn btn-primary btn-sm"
+                  aria-label="View Gaming Store Project">View Project</a>
+                <a href="https://github.com/SahilDabade" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm" aria-label="GitHub Repository for Gaming Store">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-on-scroll" data-category="web-app">
+            <div class="project-media">
+              <img src="assets/images/ss.png" alt="Weather Web Application dashboard mockup" class="project-img"
+                width="800" height="450" loading="lazy">
+              <span class="project-badge-overlay">Weather App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Weather Web Application</h3>
+              <p class="project-description">
+                A meteorological forecast web project providing clean temperature gauges, 5-day weather condition
+                forecasts, atmospheric metrics (humidity, wind speed, UV index), and location lookup.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Weather API</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://sahildabade.github.io/weatherweb/" class="btn btn-primary btn-sm"
+                  aria-label="View Weather Application Project">View
+                  Project</a>
+                <a href="https://sahildabade.github.io/weatherweb/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm" aria-label="GitHub Repository for Weather Application">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-on-scroll" data-category="frontend">
+            <div class="project-media">
+              <img src="assets/images/project-nexora.jpg" alt="NEXORA AI Modern SaaS Landing Page dashboard mockup"
+                class="project-img" width="800" height="450" loading="lazy">
+              <span class="project-badge-overlay">SaaS Landing Page</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">NEXORA AI — SaaS Landing Page</h3>
+              <p class="project-description">
+                A sleek, modern dark-mode AI SaaS landing page built with pure semantic HTML5 and CSS3, featuring custom
+                properties, CSS Grid, and responsive drawer navigation without JavaScript dependencies.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Semantic HTML5</span>
+                <span class="tech-tag">Pure CSS3</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Zero JS Architecture</span>
+              </div>
+              <div class="project-actions">
+                <a href="../Task-1-AI-SaaS-Landing-Page/index.html" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary btn-sm" aria-label="View NEXORA AI Landing Page">View Project</a>
+                <a href="https://github.com/SahilDabade" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm" aria-label="GitHub Repository for NEXORA AI">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="activities">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Involvement &amp; Leadership</span>
+          <h2 class="section-title">Activities &amp; Achievements</h2>
+          <p class="section-description">
+            Open-source contributions, technical symposiums, and student leadership initiatives undertaken during my
+            engineering studies.
+          </p>
+        </div>
+
+        <div class="activities-grid">
+
+          <div class="activity-card reveal-on-scroll">
+            <div class="activity-header">
+              <h3 class="activity-title">GirlScript Summer of Code (GSSOC)</h3>
+              <span class="activity-role">Participant / Member</span>
+            </div>
+            <p class="activity-desc">
+              Engaged in open-source development workflows, learning Git branching strategies, issue resolution,
+              documentation improvements, and collaborative development practices alongside peers.
+            </p>
+          </div>
+
+          <div class="activity-card reveal-on-scroll">
+            <div class="activity-header">
+              <h3 class="activity-title">NMIET Innothrive</h3>
+              <span class="activity-role">Team Leader</span>
+            </div>
+            <p class="activity-desc">
+              Served as team leader during the college technical and innovation event, coordinating team assignments,
+              managing technical project displays, and facilitating event execution.
+            </p>
+          </div>
+
+          <div class="activity-card reveal-on-scroll">
+            <div class="activity-header">
+              <h3 class="activity-title">NMIET Hackathon</h3>
+              <span class="activity-role">Coordinator / Team Leader</span>
+            </div>
+            <p class="activity-desc">
+              Led student participation in collegiate hackathon competitions, collaborating under tight timelines to
+              formulate software solutions and coordinate functional project prototypes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-banner reveal-on-scroll">
+          <div class="resume-content">
+            <span class="resume-tag">Curriculum Vitae</span>
+            <h2 class="resume-title">Looking for a Dedicated IT Student &amp; Developer?</h2>
+            <p class="resume-desc">
+              Download my complete resume for a structured overview of my academic background at NMIET (SPPU),
+              coursework, practical projects, technical proficiencies, and contact details.
+            </p>
+          </div>
+
+          <div class="resume-action-box">
+            <a href="#resume" class="btn btn-primary btn-lg resume-download-trigger"
+              aria-label="Download Sahil Dabade Resume">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Download Resume</span>
+            </a>
+            <span class="resume-format-note">Format: PDF (Linked)</span>
+            <a href="https://github.com/SahilDabade" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm" style="width: 100%;">
+              <span>View GitHub Profile</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-description">
+            Feel free to reach out regarding software development opportunities, project collaborations, or technical
+            discussions.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info-col reveal-on-scroll">
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box">✉️</div>
+              <div class="contact-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:dabadesahil05@gmail.com" class="contact-value">dabadesahil05@gmail.com</a>
+                <span class="contact-note">Click to send an email directly</span>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box">🐙</div>
+              <div class="contact-details">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/SahilDabade" target="_blank" rel="noopener noreferrer"
+                  class="contact-value">github.com/SahilDabade</a>
+                <span class="contact-note">Explore open-source code &amp; repositories</span>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box">💼</div>
+              <div class="contact-details">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/sahil-dabade-a52955335/" target="_blank" rel="noopener noreferrer"
+                  class="contact-value">linkedin.com/in/sahil-dabade-a52955335</a>
+                <span class="contact-note">Connect professionally on LinkedIn</span>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-box">📍</div>
+              <div class="contact-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Talegaon / Pune, Maharashtra, India</span>
+                <span class="contact-note">NMIET Campus / SPPU</span>
+              </div>
+            </div>
+
+            <div class="social-links-bar">
+              <a href="https://github.com/SahilDabade" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/sahil-dabade-a52955335/" target="_blank" rel="noopener noreferrer"
+                class="social-btn">
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:dabadesahil05@gmail.com" class="social-btn">
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-card reveal-on-scroll">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Johnson"
+                  required autocomplete="name">
+                <span class="form-feedback" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email *</label>
+                <input type="email" id="contact-email" name="email" class="form-input"
+                  placeholder="e.g. alex@example.com" required autocomplete="email">
+                <span class="form-feedback" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject *</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input"
+                  placeholder="e.g. Project Inquiry / Technical Discussion" required>
+                <span class="form-feedback" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" name="message" class="form-textarea"
+                  placeholder="Hello Sahil, I saw your portfolio and would like to discuss..." required></textarea>
+                <span class="form-feedback" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <span>Send Message</span>
+                <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div>
+          <a href="#home" class="nav-logo">
+            <span class="logo-code">&lt;</span>Sahil Dabade<span class="logo-code"> /&gt;</span>
+          </a>
+          <p class="footer-brand-bio">
+            Information Technology student at NMIET (SPPU) focused on web development, programming fundamentals, and
+            building practical projects.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About Me</a></li>
+            <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+            <li><a href="#education" class="footer-nav-link">Education</a></li>
+            <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+            <li><a href="#activities" class="footer-nav-link">Activities</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect &amp; Social</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com/SahilDabade" target="_blank" rel="noopener noreferrer"
+                class="footer-nav-link">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/sahil-dabade-a52955335/" target="_blank" rel="noopener noreferrer"
+                class="footer-nav-link">LinkedIn Profile</a></li>
+            <li><a href="mailto:dabadesahil05@gmail.com" class="footer-nav-link">Email Direct</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Form</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sahil Dabade. All rights reserved.</p>
+        <p class="footer-tagline">
+          Information Technology Engineering Student · NMIET, Talegaon (SPPU)
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top">
+    <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+      <path fill-rule="evenodd"
+        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+        clip-rule="evenodd" />
+    </svg>
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>

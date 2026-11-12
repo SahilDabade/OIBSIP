@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THERMO — Experience Temperature Differently</title>
+
+  <meta name="description"
+    content="THERMO is a futuristic, precision-engineered temperature conversion engine. Seamlessly convert between Celsius, Fahrenheit, and Kelvin with dark glassmorphism and real-time physical visualization.">
+  <meta name="keywords" content="THERMO, temperature converter, Celsius, Fahrenheit, Kelvin, scientific calculator, thermal spectrum">
+  <meta name="author" content="THERMO">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2335D6F2'/><stop offset='100%25' stop-color='%23818CF8'/></linearGradient></defs><rect width='100' height='100' rx='26' fill='%23080F1E'/><circle cx='50' cy='50' r='38' stroke='url(%23g)' stroke-width='6' fill='none'/><path d='M50 24v28m0 0a10 10 0 1 1-6 9.16' stroke='url(%23g)' stroke-width='5' stroke-linecap='round' fill='none'/><circle cx='50' cy='62' r='5' fill='%2335D6F2'/></svg>">
+</head>
+
+<body>
+
+  <div class="aurora-backdrop" aria-hidden="true">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+    <div class="aurora-blob aurora-blob-3"></div>
+    <div class="aurora-grid-overlay"></div>
+  </div>
+
+  <a href="#main-converter" class="skip-link">Skip to converter</a>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="#" class="brand-logo" aria-label="THERMO — Experience Temperature Differently">
+        <div class="brand-icon-wrapper" aria-hidden="true">
+          <svg class="brand-svg" viewBox="0 0 32 32" width="26" height="26" fill="none">
+            <circle cx="16" cy="16" r="14" stroke="url(#brand-grad)" stroke-width="2" stroke-dasharray="2 3" opacity="0.6" />
+            <path d="M16 7v10.5a4.5 4.5 0 1 0 4 0V7a2 2 0 1 0-4 0z" stroke="url(#brand-grad)" stroke-width="2" stroke-linecap="round" />
+            <circle cx="16" cy="22" r="2.2" fill="var(--color-primary-accent)" />
+            <defs>
+              <linearGradient id="brand-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#35D6F2" />
+                <stop offset="1" stop-color="#818CF8" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-name">THERMO</span>
+          <span class="brand-tagline">Experience Temperature Differently.</span>
+        </div>
+      </a>
+
+      <div class="nav-controls">
+
+        <div class="system-status-pill" title="Conversion engine active and ready">
+          <span class="status-pulse-dot" aria-hidden="true"></span>
+          <span class="status-label">SYSTEM ONLINE</span>
+        </div>
+
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle theme appearance"
+          title="Toggle light / dark appearance">
+
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper" id="main-content">
+
+    <section class="hero-section">
+      <div class="container hero-container">
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon" aria-hidden="true">✦</span>
+            <span>INTELLIGENT TEMPERATURE CONVERSION</span>
+          </div>
+
+          <h1 class="hero-title">
+            Temperature Without <span class="gradient-text">Boundaries</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            Precision conversion between Celsius, Fahrenheit and Kelvin. Fast, seamless and beautifully simple.
+          </p>
+
+          <div class="hero-specs-row">
+            <div class="hero-spec-item">
+              <span class="spec-dot"></span>
+              <span>Thermodynamic Absolute Zero Bounds</span>
+            </div>
+            <div class="hero-spec-item">
+              <span class="spec-dot"></span>
+              <span>4-Decimal Adaptive Precision</span>
+            </div>
+            <div class="hero-spec-item">
+              <span class="spec-dot"></span>
+              <span>Instantaneous Tri-Scale Calculation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-illustration-wrapper" aria-hidden="true">
+          <div class="futuristic-thermo-hud">
+
+            <div class="hud-orbit-ring ring-1"></div>
+            <div class="hud-orbit-ring ring-2"></div>
+            <div class="hud-orbit-ring ring-3"></div>
+
+            <svg class="hud-gauge-svg" viewBox="0 0 200 200" width="200" height="200">
+              <defs>
+                <linearGradient id="hud-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#35D6F2" />
+                  <stop offset="60%" stop-color="#818CF8" />
+                  <stop offset="100%" stop-color="#F43F5E" />
+                </linearGradient>
+                <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="6" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+
+              <circle cx="100" cy="100" r="76" stroke="rgba(148, 163, 184, 0.12)" stroke-width="10" fill="none" />
+
+              <circle class="hud-arc-progress" cx="100" cy="100" r="76" stroke="url(#hud-grad)" stroke-width="10"
+                stroke-dasharray="360 480" stroke-linecap="round" fill="none" filter="url(#glow)" />
+
+              <circle cx="100" cy="100" r="42" fill="rgba(20, 34, 56, 0.85)" stroke="rgba(53, 214, 242, 0.3)"
+                stroke-width="1.5" />
+
+              <line class="hud-needle" x1="100" y1="100" x2="100" y2="64" stroke="#35D6F2" stroke-width="3"
+                stroke-linecap="round" />
+              <circle cx="100" cy="100" r="6" fill="#35D6F2" />
+            </svg>
+
+            <div class="hud-floating-badge badge-c">
+              <span class="badge-label">°C</span>
+              <span class="badge-reading" id="hud-celsius-val">21.0</span>
+            </div>
+            <div class="hud-floating-badge badge-f">
+              <span class="badge-label">°F</span>
+              <span class="badge-reading" id="hud-fahrenheit-val">69.8</span>
+            </div>
+            <div class="hud-floating-badge badge-k">
+              <span class="badge-label">K</span>
+              <span class="badge-reading" id="hud-kelvin-val">294.15</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="converter-section" aria-label="Temperature Conversion Engine">
+      <div class="container">
+        <div class="glass-card main-converter-card" id="main-converter">
+
+          <div class="converter-card-header">
+            <div class="header-tag-group">
+              <span class="card-kicker">CORE COMPUTATION MODULE</span>
+              <h2 class="converter-heading">Tri-Scale Converter</h2>
+            </div>
+            <div class="engine-indicator" id="engine-indicator">
+              <span class="indicator-glow"></span>
+              <span class="indicator-text">READY</span>
+            </div>
+          </div>
+
+          <div class="converter-body-split">
+
+            <div class="converter-input-side">
+              <form id="temp-converter-form" class="converter-form" novalidate>
+
+                <div class="field-label-row">
+                  <label for="temp-input" class="input-field-label">
+                    <span>Input Temperature</span>
+                    <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <span class="field-subtext">Supports negative values &amp; decimals</span>
+                </div>
+
+                <div class="glass-input-wrapper" id="input-container">
+                  <div class="input-leading-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" />
+                    </svg>
+                  </div>
+                  <input type="text" id="temp-input" class="cyber-temp-input"
+                    placeholder="Enter value (e.g. 25, -10, 98.6)" autocomplete="off" inputmode="decimal"
+                    spellcheck="false" aria-describedby="input-feedback">
+                  <button type="button" class="btn-clear-field" id="clear-input-btn"
+                    aria-label="Clear temperature input" title="Clear input field" tabindex="-1">
+                    <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="inline-feedback-msg" id="input-feedback" aria-live="polite"></div>
+
+                <div class="unit-selector-wrapper">
+                  <div class="unit-selector-header">
+                    <span class="unit-selector-title">Original Scale</span>
+                    <span class="unit-selector-hint">Select input unit</span>
+                  </div>
+                  <div class="futuristic-segmented-control" role="radiogroup" aria-label="Input temperature scale">
+                    <label class="segmented-pill">
+                      <input type="radio" name="temp-unit" value="celsius" class="pill-radio" checked>
+                      <span class="pill-surface">
+                        <span class="pill-unit-sym">°C</span>
+                        <span class="pill-unit-name">Celsius</span>
+                      </span>
+                    </label>
+                    <label class="segmented-pill">
+                      <input type="radio" name="temp-unit" value="fahrenheit" class="pill-radio">
+                      <span class="pill-surface">
+                        <span class="pill-unit-sym">°F</span>
+                        <span class="pill-unit-name">Fahrenheit</span>
+                      </span>
+                    </label>
+                    <label class="segmented-pill">
+                      <input type="radio" name="temp-unit" value="kelvin" class="pill-radio">
+                      <span class="pill-surface">
+                        <span class="pill-unit-sym">K</span>
+                        <span class="pill-unit-name">Kelvin</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="presets-section">
+                  <div class="presets-header">
+                    <span class="presets-title">Quick Presets:</span>
+                    <span class="presets-subtitle">One-click thermal benchmarks</span>
+                  </div>
+                  <div class="presets-row">
+                    <button type="button" class="preset-pill-btn" data-value="-273.15" data-unit="celsius"
+                      title="Thermodynamic threshold: 0 Kelvin">
+                      ❄ Absolute Zero (-273.15°C)
+                    </button>
+                    <button type="button" class="preset-pill-btn" data-value="0" data-unit="celsius"
+                      title="Water freezing equilibrium: 32°F">
+                      🧊 Freezing (0°C)
+                    </button>
+                    <button type="button" class="preset-pill-btn" data-value="21" data-unit="celsius"
+                      title="Standard ambient room comfort: 69.8°F">
+                      🌿 Room Temp (21°C)
+                    </button>
+                    <button type="button" class="preset-pill-btn" data-value="37" data-unit="celsius"
+                      title="Normal human body temperature: 98.6°F">
+                      ❤️ Body Temp (37°C)
+                    </button>
+                    <button type="button" class="preset-pill-btn" data-value="100" data-unit="celsius"
+                      title="Water boiling point at 1 atm: 212°F">
+                      ♨ Boiling (100°C)
+                    </button>
+                  </div>
+                </div>
+
+                <div class="converter-cta-group">
+                  <button type="submit" class="btn btn-primary-convert" id="convert-btn">
+                    <span class="btn-shine"></span>
+                    <svg class="btn-action-icon" viewBox="0 0 24 24" width="20" height="20" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="17 1 21 5 17 9"></polyline>
+                      <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                      <polyline points="7 23 3 19 7 15"></polyline>
+                      <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                    </svg>
+                    <span class="btn-label">Convert Temperature</span>
+                  </button>
+
+                  <button type="button" class="btn btn-glass-reset" id="reset-btn"
+                    title="Reset all inputs, outputs, and indicators">
+                    <svg class="btn-action-icon" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                      <path d="M3 3v5h5"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="converter-results-side" aria-live="polite">
+              <div class="results-meta-header">
+                <div class="results-title-group">
+                  <span class="results-kicker">REAL-TIME TELEMETRY</span>
+                  <h3 class="results-main-title">Calculated Outputs</h3>
+                </div>
+                <div class="precision-tag">
+                  <span class="tag-dot"></span>
+                  <span>4-Dec Precision</span>
+                </div>
+              </div>
+
+              <div class="results-cards-container">
+
+                <article class="glass-result-card" id="card-celsius" data-unit="celsius">
+                  <div class="card-ambient-aura"></div>
+                  <div class="card-head">
+                    <div class="unit-identity">
+                      <div class="unit-icon-badge icon-celsius">
+                        <span>°C</span>
+                      </div>
+                      <div class="unit-titles">
+                        <h4 class="unit-display-name">Celsius</h4>
+                        <span class="unit-family">Centigrade Scale</span>
+                      </div>
+                    </div>
+                    <span class="input-indicator-badge" id="badge-celsius">INPUT</span>
+                  </div>
+
+                  <div class="card-value-row">
+                    <span class="metric-number" id="val-celsius">--</span>
+                    <span class="metric-symbol">°C</span>
+                  </div>
+
+                  <div class="card-footer-row">
+                    <span class="formula-caption" id="formula-celsius">Base Metric Scale</span>
+                    <button type="button" class="btn-copy-glass" data-target="val-celsius" data-unit="°C"
+                      aria-label="Copy Celsius temperature result" title="Copy value to clipboard">
+                      <svg class="copy-svg" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span class="copy-btn-text">Copy</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="glass-result-card" id="card-fahrenheit" data-unit="fahrenheit">
+                  <div class="card-ambient-aura"></div>
+                  <div class="card-head">
+                    <div class="unit-identity">
+                      <div class="unit-icon-badge icon-fahrenheit">
+                        <span>°F</span>
+                      </div>
+                      <div class="unit-titles">
+                        <h4 class="unit-display-name">Fahrenheit</h4>
+                        <span class="unit-family">Imperial Scale</span>
+                      </div>
+                    </div>
+                    <span class="input-indicator-badge" id="badge-fahrenheit">INPUT</span>
+                  </div>
+
+                  <div class="card-value-row">
+                    <span class="metric-number" id="val-fahrenheit">--</span>
+                    <span class="metric-symbol">°F</span>
+                  </div>
+
+                  <div class="card-footer-row">
+                    <span class="formula-caption" id="formula-fahrenheit">(C × 9/5) + 32</span>
+                    <button type="button" class="btn-copy-glass" data-target="val-fahrenheit" data-unit="°F"
+                      aria-label="Copy Fahrenheit temperature result" title="Copy value to clipboard">
+                      <svg class="copy-svg" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span class="copy-btn-text">Copy</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="glass-result-card" id="card-kelvin" data-unit="kelvin">
+                  <div class="card-ambient-aura"></div>
+                  <div class="card-head">
+                    <div class="unit-identity">
+                      <div class="unit-icon-badge icon-kelvin">
+                        <span>K</span>
+                      </div>
+                      <div class="unit-titles">
+                        <h4 class="unit-display-name">Kelvin</h4>
+                        <span class="unit-family">Thermodynamic Scale</span>
+                      </div>
+                    </div>
+                    <span class="input-indicator-badge" id="badge-kelvin">INPUT</span>
+                  </div>
+
+                  <div class="card-value-row">
+                    <span class="metric-number" id="val-kelvin">--</span>
+                    <span class="metric-symbol">K</span>
+                  </div>
+
+                  <div class="card-footer-row">
+                    <span class="formula-caption" id="formula-kelvin">C + 273.15</span>
+                    <button type="button" class="btn-copy-glass" data-target="val-kelvin" data-unit="K"
+                      aria-label="Copy Kelvin temperature result" title="Copy value to clipboard">
+                      <svg class="copy-svg" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span class="copy-btn-text">Copy</span>
+                    </button>
+                  </div>
+                </article>
+
+              </div>
+
+              <div class="formula-telemetry-banner" id="formula-banner">
+                <div class="banner-lightning-icon" aria-hidden="true">⚡</div>
+                <div class="banner-body">
+                  <span class="banner-tag">ACTIVE SCIENTIFIC FORMULA:</span>
+                  <span class="banner-equation" id="active-formula-text">
+                    F = (C × 9/5) + 32 &bull; K = C + 273.15
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spectrum-section" aria-label="Thermal Perception Spectrum">
+      <div class="container">
+        <div class="glass-card spectrum-card">
+          <div class="spectrum-header">
+            <div class="spectrum-header-left">
+              <span class="spectrum-kicker">PHYSICAL SPECTRUM TELEMETRY</span>
+              <h3 class="spectrum-title">Thermal Spectrum &amp; Environmental Zone</h3>
+            </div>
+            <div class="spectrum-active-tag">
+              <span>Current Zone: </span>
+              <strong id="active-zone-name">Comfortable</strong>
+            </div>
+          </div>
+
+          <div class="spectrum-track-wrapper">
+
+            <div class="spectrum-pointer" id="spectrum-pointer" style="left: 50%;">
+              <div class="pointer-bubble" id="pointer-reading">21°C</div>
+              <div class="pointer-needle"></div>
+            </div>
+
+            <div class="spectrum-bar">
+              <div class="spectrum-segment seg-freezing" title="Below 0°C: Freezing">
+                <span class="seg-name">Freezing</span>
+                <span class="seg-range">&lt; 0°C</span>
+              </div>
+              <div class="spectrum-segment seg-cool" title="0°C – 15°C: Cool">
+                <span class="seg-name">Cool</span>
+                <span class="seg-range">0° – 15°C</span>
+              </div>
+              <div class="spectrum-segment seg-comfortable" title="16°C – 25°C: Comfortable">
+                <span class="seg-name">Comfortable</span>
+                <span class="seg-range">16° – 25°C</span>
+              </div>
+              <div class="spectrum-segment seg-warm" title="26°C – 35°C: Warm">
+                <span class="seg-name">Warm</span>
+                <span class="seg-range">26° – 35°C</span>
+              </div>
+              <div class="spectrum-segment seg-hot" title="Above 35°C: Hot">
+                <span class="seg-name">Hot</span>
+                <span class="seg-range">&gt; 35°C</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="spectrum-footer-caption">
+            <span class="caption-icon" aria-hidden="true">ℹ</span>
+            <span>Illustrative human perceptual guide based on standard atmospheric pressure (1 atm) at sea level.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="history-section" aria-label="Recent Conversion Snapshots">
+      <div class="container">
+        <div class="glass-card history-card">
+          <div class="history-head">
+            <div class="history-head-left">
+              <div class="history-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="history-heading">Conversion History</h3>
+                <span class="history-sub">Last 5 calculation snapshots (click any row to reload)</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn-clear-history-glass" id="clear-history-btn"
+              title="Clear all stored calculation history">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              <span>Clear History</span>
+            </button>
+          </div>
+
+          <div class="history-feed" id="history-list" role="region" aria-live="polite">
+
+            <div class="history-empty-state" id="history-empty">
+              <span>No telemetry snapshots recorded yet. Perform your first calculation above!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reference-section" aria-label="Thermodynamic References">
+      <div class="container">
+        <div class="reference-cards-grid">
+          <div class="glass-card ref-item-card">
+            <div class="ref-kicker">PHYSICAL THRESHOLD</div>
+            <h4 class="ref-card-title">Absolute Zero</h4>
+            <p class="ref-card-desc">The theoretical state where all enthalpy and heat energy vanish, halting molecular motion.</p>
+            <div class="ref-metrics-cluster">
+              <div class="cluster-item"><span>Celsius</span><strong>-273.15 °C</strong></div>
+              <div class="cluster-item"><span>Fahrenheit</span><strong>-459.67 °F</strong></div>
+              <div class="cluster-item"><span>Kelvin</span><strong>0.00 K</strong></div>
+            </div>
+          </div>
+
+          <div class="glass-card ref-item-card">
+            <div class="ref-kicker">PHASE EQUILIBRIUM</div>
+            <h4 class="ref-card-title">Water Freezing Point</h4>
+            <p class="ref-card-desc">The crystallization transition temperature of pure distilled water at 1 atm.</p>
+            <div class="ref-metrics-cluster">
+              <div class="cluster-item"><span>Celsius</span><strong>0.00 °C</strong></div>
+              <div class="cluster-item"><span>Fahrenheit</span><strong>32.00 °F</strong></div>
+              <div class="cluster-item"><span>Kelvin</span><strong>273.15 K</strong></div>
+            </div>
+          </div>
+
+          <div class="glass-card ref-item-card">
+            <div class="ref-kicker">VAPOR PRESSURE</div>
+            <h4 class="ref-card-title">Water Boiling Point</h4>
+            <p class="ref-card-desc">The thermodynamic threshold where vapor pressure equals standard atmospheric pressure.</p>
+            <div class="ref-metrics-cluster">
+              <div class="cluster-item"><span>Celsius</span><strong>100.00 °C</strong></div>
+              <div class="cluster-item"><span>Fahrenheit</span><strong>212.00 °F</strong></div>
+              <div class="cluster-item"><span>Kelvin</span><strong>373.15 K</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <svg class="footer-svg" viewBox="0 0 24 24" width="20" height="20" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="url(#footer-grad)" stroke-width="2" />
+            <path d="M12 6v6m0 0a3 3 0 1 0 3 3" stroke="url(#footer-grad)" stroke-width="2" stroke-linecap="round" />
+            <defs>
+              <linearGradient id="footer-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#35D6F2" />
+                <stop offset="1" stop-color="#818CF8" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="footer-brand-name">THERMO</span>
+        </div>
+        <p class="footer-tagline">Precision meets simplicity.</p>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-copy">&copy; 2026 THERMO. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-glass" id="toast" role="status" aria-live="polite">
+    <div class="toast-icon-circle" id="toast-icon">✓</div>
+    <span class="toast-content-text" id="toast-message">Telemetry copied to clipboard</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

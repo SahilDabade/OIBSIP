@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <circle cx="200" cy="180" r="140" fill="#06b6d4" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="650" cy="280" r="130" fill="#8b5cf6" opacity="0.12" filter="url(#glow)"/>
+
+  <rect x="40" y="30" width="720" height="390" rx="16" fill="#131d2e" stroke="#1e293b" stroke-width="1.5"/>
+
+  <path d="M 40 46 A 16 16 0 0 1 56 30 L 744 30 A 16 16 0 0 1 760 46 L 760 70 L 40 70 Z" fill="#0f172a"/>
+  <circle cx="65" cy="50" r="5" fill="#ef4444"/>
+  <circle cx="80" cy="50" r="5" fill="#f59e0b"/>
+  <circle cx="95" cy="50" r="5" fill="#10b981"/>
+
+  <text x="400" y="54" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="1">ALEX AI ASSISTANT • v2.4 PRO</text>
+
+  <rect x="60" y="90" width="220" height="310" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+
+  <circle cx="110" cy="135" r="26" fill="url(#cyanPurple)"/>
+  <text x="110" y="142" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle">A</text>
+  <text x="150" y="132" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="700">Alex Assistant</text>
+  <rect x="150" y="140" width="62" height="18" rx="9" fill="#065f46"/>
+  <circle cx="160" cy="149" r="3" fill="#10b981"/>
+  <text x="184" y="153" fill="#6ee7b7" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">ACTIVE</text>
+
+  <rect x="75" y="185" width="190" height="95" rx="8" fill="#131e33"/>
+  <text x="90" y="206" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="600">VOICE FREQUENCY</text>
+
+  <g fill="url(#cyanPurple)">
+    <rect x="90" y="240" width="5" height="25" rx="2.5"/>
+    <rect x="100" y="230" width="5" height="35" rx="2.5"/>
+    <rect x="110" y="220" width="5" height="45" rx="2.5"/>
+    <rect x="120" y="215" width="5" height="50" rx="2.5"/>
+    <rect x="130" y="235" width="5" height="30" rx="2.5"/>
+    <rect x="140" y="225" width="5" height="40" rx="2.5"/>
+    <rect x="150" y="210" width="5" height="55" rx="2.5"/>
+    <rect x="160" y="222" width="5" height="43" rx="2.5"/>
+    <rect x="170" y="230" width="5" height="35" rx="2.5"/>
+    <rect x="180" y="218" width="5" height="47" rx="2.5"/>
+    <rect x="190" y="238" width="5" height="27" rx="2.5"/>
+    <rect x="200" y="244" width="5" height="21" rx="2.5"/>
+    <rect x="210" y="232" width="5" height="33" rx="2.5"/>
+    <rect x="220" y="225" width="5" height="40" rx="2.5"/>
+    <rect x="230" y="240" width="5" height="25" rx="2.5"/>
+    <rect x="240" y="246" width="5" height="19" rx="2.5"/>
+  </g>
+
+  <rect x="75" y="295" width="90" height="24" rx="6" fill="#1e293b"/>
+  <text x="120" y="311" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">NLP Parsing</text>
+  <rect x="175" y="295" width="90" height="24" rx="6" fill="#1e293b"/>
+  <text x="220" y="311" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Task Automation</text>
+  <rect x="75" y="330" width="190" height="24" rx="6" fill="#1e293b"/>
+  <text x="170" y="346" fill="#06b6d4" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">✦ Smart Query Assistant</text>
+
+  <rect x="300" y="90" width="440" height="310" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+
+  <rect x="440" y="115" width="280" height="48" rx="10" fill="#1e293b"/>
+  <text x="455" y="136" fill="#e2e8f0" font-family="sans-serif" font-size="12">Alex, optimize this quicksort routine and</text>
+  <text x="455" y="152" fill="#e2e8f0" font-family="sans-serif" font-size="12">explain the recursive partition step.</text>
+
+  <rect x="320" y="180" width="400" height="155" rx="10" fill="#111c30" stroke="#1e3a5f" stroke-width="1"/>
+  <g transform="translate(335, 195)">
+    <circle cx="10" cy="10" r="10" fill="url(#cyanPurple)"/>
+    <text x="10" y="14" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">A</text>
+    <text x="28" y="14" fill="#06b6d4" font-family="sans-serif" font-size="12" font-weight="700">Alex</text>
+    <text x="65" y="14" fill="#64748b" font-family="sans-serif" font-size="11">· Just now</text>
+
+    <text x="0" y="38" fill="#cbd5e1" font-family="sans-serif" font-size="12">Here is the 3-way partition optimization in C++:</text>
+
+    <rect x="0" y="48" width="370" height="68" rx="6" fill="#070c16"/>
+    <text x="12" y="68" fill="#f43f5e" font-family="Courier, monospace" font-size="11">void <tspan fill="#38bdf8">partition3Way</tspan><tspan fill="#cbd5e1">(vector&lt;int&gt;&amp; arr, int l, int r)</tspan></text>
+    <text x="12" y="86" fill="#94a3b8" font-family="Courier, monospace" font-size="11">  int lt = l, gt = r, pivot = arr[l];</text>
+    <text x="12" y="104" fill="#10b981" font-family="Courier, monospace" font-size="11">  // Complexity reduced to O(N) for duplicates!</text>
+  </g>
+
+  <rect x="320" y="350" width="350" height="36" rx="8" fill="#131d2e" stroke="#1e293b" stroke-width="1"/>
+  <text x="335" y="373" fill="#64748b" font-family="sans-serif" font-size="12">Type your command or prompt here...</text>
+  <rect x="680" y="350" width="40" height="36" rx="8" fill="url(#cyanPurple)"/>
+  <polygon points="695,363 707,368 695,373" fill="#ffffff"/>
+</svg>

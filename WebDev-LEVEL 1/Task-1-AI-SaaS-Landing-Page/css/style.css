@@ -1,14 +1,5 @@
-/* ==========================================================================
-   NEXORA AI — MODERN AI SAAS LANDING PAGE STYLESHEET
-   Level 1 Task 1 Project | Pure HTML5 & CSS3
-   No JavaScript or external frameworks required
-   ========================================================================== */
-
-/* ==========================================================================
-   1. DESIGN SYSTEM TOKENS (CSS CUSTOM PROPERTIES)
-   ========================================================================== */
 :root {
-  /* Color Palette — Modern Dark SaaS */
+
   --bg-primary: #090d16;
   --bg-secondary: #0d121f;
   --bg-surface: #111827;
@@ -17,7 +8,7 @@
   --bg-card-featured: rgba(22, 21, 46, 0.88);
   --bg-input: rgba(15, 23, 42, 0.85);
 
-  /* Brand Accents & Gradients */
+
   --primary: #6366f1;
   --primary-hover: #4f46e5;
   --primary-light: #818cf8;
@@ -27,32 +18,32 @@
   --accent-green: #10b981;
   --accent-amber: #f59e0b;
 
-  /* Gradients */
+
   --gradient-brand: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
   --gradient-text: linear-gradient(135deg, #ffffff 15%, #c7d2fe 60%, #818cf8 100%);
   --gradient-card-top: linear-gradient(90deg, rgba(99, 102, 241, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
 
-  /* Typography Colors */
+
   --text-white: #ffffff;
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   --text-dim: #475569;
 
-  /* Borders */
+
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-medium: rgba(255, 255, 255, 0.16);
   --border-focus: rgba(99, 102, 241, 0.65);
   --border-featured: rgba(139, 92, 246, 0.55);
 
-  /* Shadows & Ambient Glows */
+
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
   --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
   --shadow-glow: 0 0 35px rgba(99, 102, 241, 0.22);
   --shadow-glow-featured: 0 0 45px rgba(139, 92, 246, 0.32);
 
-  /* Consistent Radii */
+
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -60,20 +51,16 @@
   --radius-xl: 20px;
   --radius-full: 9999px;
 
-  /* Transitions */
+
   --transition-fast: 0.18s ease;
   --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-slow: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Layout Consts */
+
   --container-max: 1200px;
   --header-height: 74px;
 }
 
-/* ==========================================================================
-   2. RESET & BASE STYLES
-   ========================================================================== */
-*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -100,14 +87,19 @@ body {
   min-height: 100vh;
 }
 
-/* Accessible focus outline */
+
 :focus-visible {
   outline: 2px solid var(--primary-light);
   outline-offset: 3px;
 }
 
-/* Typography Defaults */
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-white);
   font-weight: 700;
   line-height: 1.25;
@@ -133,12 +125,15 @@ img {
   display: block;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
 }
 
-/* Container Utility */
+
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -152,7 +147,7 @@ input, button, select, textarea {
   text-align: center;
 }
 
-/* Gradient Text Effect */
+
 .gradient-text {
   background: var(--gradient-brand);
   -webkit-background-clip: text;
@@ -160,14 +155,14 @@ input, button, select, textarea {
   display: inline-block;
 }
 
-/* Common Section Padding */
+
 .section {
   padding-top: 6rem;
   padding-bottom: 6rem;
   position: relative;
 }
 
-/* Section Header Component */
+
 .section-header {
   max-width: 720px;
   margin-left: auto;
@@ -617,9 +612,17 @@ input, button, select, textarea {
   border-radius: 50%;
 }
 
-.dot-red { background-color: #ef4444; }
-.dot-yellow { background-color: #f59e0b; }
-.dot-green { background-color: #10b981; }
+.dot-red {
+  background-color: #ef4444;
+}
+
+.dot-yellow {
+  background-color: #f59e0b;
+}
+
+.dot-green {
+  background-color: #10b981;
+}
 
 .mockup-address {
   display: flex;
@@ -777,12 +780,41 @@ input, button, select, textarea {
   transform: scale(1.08);
 }
 
-.icon-indigo { background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); }
-.icon-purple { background: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
-.icon-cyan   { background: rgba(6, 182, 212, 0.15); color: #22d3ee; border: 1px solid rgba(6, 182, 212, 0.3); }
-.icon-pink   { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); }
-.icon-green  { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
-.icon-amber  { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.icon-indigo {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.icon-purple {
+  background: rgba(139, 92, 246, 0.15);
+  color: #a78bfa;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.icon-cyan {
+  background: rgba(6, 182, 212, 0.15);
+  color: #22d3ee;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.icon-pink {
+  background: rgba(236, 72, 153, 0.15);
+  color: #f472b6;
+  border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.icon-green {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.icon-amber {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
 
 .feature-title {
   font-size: 1.3rem;
@@ -1329,7 +1361,9 @@ input, button, select, textarea {
   color: #f43f5e;
 }
 
-.form-input, .form-select, .form-textarea {
+.form-input,
+.form-select,
+.form-textarea {
   width: 100%;
   background: var(--bg-input);
   border: 1px solid var(--border-subtle);
@@ -1340,11 +1374,14 @@ input, button, select, textarea {
   transition: all var(--transition-fast);
 }
 
-.form-input::placeholder, .form-textarea::placeholder {
+.form-input::placeholder,
+.form-textarea::placeholder {
   color: var(--text-muted);
 }
 
-.form-input:focus, .form-select:focus, .form-textarea:focus {
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
@@ -1676,7 +1713,8 @@ input, button, select, textarea {
 
   .pricing-card-featured {
     transform: none;
-    order: -1; /* Display recommended Pro plan on top on mobile/tablets */
+    order: -1;
+
   }
 
   .pricing-card-featured:hover {
@@ -1752,22 +1790,22 @@ input, button, select, textarea {
   }
 
   /* Menu Drawer Opened State (Pure CSS Checkbox Hack) */
-  .nav-toggle:checked ~ .nav-menu {
+  .nav-toggle:checked~.nav-menu {
     height: calc(100vh - var(--header-height));
     padding: 2rem 1.5rem;
     overflow-y: auto;
   }
 
   /* Hamburger to 'X' Transformation */
-  .nav-toggle:checked ~ .nav-toggle-label .hamburger-bar:nth-child(1) {
+  .nav-toggle:checked~.nav-toggle-label .hamburger-bar:nth-child(1) {
     transform: translateY(8.5px) rotate(45deg);
   }
 
-  .nav-toggle:checked ~ .nav-toggle-label .hamburger-bar:nth-child(2) {
+  .nav-toggle:checked~.nav-toggle-label .hamburger-bar:nth-child(2) {
     opacity: 0;
   }
 
-  .nav-toggle:checked ~ .nav-toggle-label .hamburger-bar:nth-child(3) {
+  .nav-toggle:checked~.nav-toggle-label .hamburger-bar:nth-child(3) {
     transform: translateY(-8.5px) rotate(-45deg);
   }
 
@@ -1829,7 +1867,8 @@ input, button, select, textarea {
   }
 
   .floating-badge {
-    display: none; /* Hide floating badges on mobile to keep preview clean */
+    display: none;
+    /* Hide floating badges on mobile to keep preview clean */
   }
 }
 
