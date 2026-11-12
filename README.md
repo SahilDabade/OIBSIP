@@ -68,7 +68,7 @@ OIBSIP/
 
 ### 1. Level 1 · Task 1: NEXORA AI — Modern SaaS Landing Page
 A commercial-grade, dark-mode SaaS product landing page inspired by modern tech unicorns (Linear, Vercel, Supabase).
-* **Location**: [`WebDev-WebDev-WebDev-LEVEL 1/Task-1-AI-SaaS-Landing-Page`](LEVEL%201/Task-1-AI-SaaS-Landing-Page/)
+* **Location**: [`WebDev-WebDev-LEVEL 1/Task-1-AI-SaaS-Landing-Page`](WebDev-LEVEL%201/Task-1-AI-SaaS-Landing-Page/)
 * **Technologies**: Semantic HTML5, Pure CSS3 (Custom Properties, CSS Grid, Flexbox).
 * **Strict Constraint**: Built with **100% pure CSS — zero JavaScript files**.
 * **Key Features**:
@@ -77,13 +77,13 @@ A commercial-grade, dark-mode SaaS product landing page inspired by modern tech 
   * 6-card feature grid, 3-step workflow pipeline, and 3-tier pricing table.
   * Verified customer testimonials and accessible contact form.
 * **How to Run**:
-  Open [`WebDev-WebDev-LEVEL 1/Task-1-AI-SaaS-Landing-Page/index.html`](LEVEL%201/Task-1-AI-SaaS-Landing-Page/index.html) in any browser.
+  Open [`WebDev-LEVEL 1/Task-1-AI-SaaS-Landing-Page/index.html`](WebDev-LEVEL%201/Task-1-AI-SaaS-Landing-Page/index.html) in any browser.
 
 ---
 
 ### 2. Level 1 · Task 2: Personal Developer Portfolio
 A personal portfolio website designed for placement preparations, internship showcases, and software developer branding.
-* **Location**: [`WebDev-WebDev-LEVEL 1/Task-2-Personal-Portfolio`](LEVEL%201/Task-2-Personal-Portfolio/)
+* **Location**: [`WebDev-LEVEL 1/Task-2-Personal-Portfolio`](WebDev-LEVEL%201/Task-2-Personal-Portfolio/)
 * **Technologies**: Semantic HTML5, Vanilla CSS3, Modular Vanilla JavaScript (ES6+).
 * **Theme**: Standardized **Midnight Navy + Electric Blue** professional dark palette (`#080D18` / `#3B82F6`) with persistent light theme toggle.
 * **Key Features**:
@@ -93,13 +93,13 @@ A personal portfolio website designed for placement preparations, internship sho
   * Real-time client-side contact form validation with friendly toast alerts.
   * Responsive hero section with Sahil's genuine professional profile photograph.
 * **How to Run**:
-  Open [`WebDev-WebDev-LEVEL 1/Task-2-Personal-Portfolio/index.html`](LEVEL%201/Task-2-Personal-Portfolio/index.html) in any browser.
+  Open [`WebDev-LEVEL 1/Task-2-Personal-Portfolio/index.html`](WebDev-LEVEL%201/Task-2-Personal-Portfolio/index.html) in any browser.
 
 ---
 
 ### 3. Level 1 · Task 3: THERMO — Smart Temperature Converter
 A futuristic, dark glassmorphic temperature conversion web application designed at the intersection of weather technology and telemetry SaaS.
-* **Location**: [`WebDev-WebDev-LEVEL 1/Task-3-Temperature-Converter`](LEVEL%201/Task-3-Temperature-Converter/)
+* **Location**: [`WebDev-LEVEL 1/Task-3-Temperature-Converter`](WebDev-LEVEL%201/Task-3-Temperature-Converter/)
 * **Technologies**: Semantic HTML5, Vanilla CSS3, Modular Vanilla JavaScript (ES6+).
 * **Brand & Visuals**: **THERMO** (*"Experience Temperature Differently"*), frosted glass cards (`backdrop-filter: blur(20px)`), aurora gradient mesh.
 * **Key Features**:
@@ -110,7 +110,7 @@ A futuristic, dark glassmorphic temperature conversion web application designed 
   * **Desktop Hero HUD**: Animated futuristic SVG gauge with real-time synchronized data chips.
   * **Conversion Snapshot History**: Persists last 5 calculations in `localStorage` with 1-click reload.
 * **How to Run**:
-  Open [`WebDev-WebDev-LEVEL 1/Task-3-Temperature-Converter/index.html`](LEVEL%201/Task-3-Temperature-Converter/index.html) in any browser.
+  Open [`WebDev-LEVEL 1/Task-3-Temperature-Converter/index.html`](WebDev-LEVEL%201/Task-3-Temperature-Converter/index.html) in any browser.
 
 ---
 
